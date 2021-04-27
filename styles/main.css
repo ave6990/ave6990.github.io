@@ -1,0 +1,125 @@
+html {
+	background: #ddd;
+}
+
+body {
+	margin: 0px;
+	color: #222;
+	background: #fcfcfc;
+	font: 18pt sans-serif;
+}
+
+/*header {*/
+/*	padding: 10px;*/
+/*	color: #034769;*/
+/*	color: #fafafa;*/
+/*	background: #3ca0d0;*/
+/*}*/
+
+main {
+	padding: 20px;
+/*	float:left;*/
+/*	width: 65%;*/
+}
+
+/*nav {*/
+/*	float: left;*/
+/*	width: 30%;*/
+/*}*/
+
+nav, footer, header {
+	padding: 6px;
+	background: #034769;
+	color: #fafafa;
+/*	border: 2px solid #086fa1;*/
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li {
+	display: inline;
+	padding: 0 10px;
+	border-right: 2px solid #086fa1;
+}
+
+nav a:link, nav a:visited {
+	color: #fafafa;
+	text-decoration: none;
+}
+
+nav li:hover {
+	background: #086fa1;
+}
+
+footer {
+	text-align: center;
+}
+
+h1 {
+	font-size: 24pt;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+#tb_page {
+	width: 60px;
+	min-width: 30px;
+}
+
+input, select, button {
+	margin: 5px;
+	font-size: 14pt;
+	min-width: 150px;
+	border-color: #086fa1;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+}
+
+.label {
+	display: inline;
+/*	width: 400px;*/
+}
+
+input .field {
+	display: block;
+}
+
+label {
+	display: block;
+}
+
+button {
+	font-size: 16pt;
+	color: #222;	
+/*	background: #fff;*/
+	min-width: 30px;
+}
+
+table {
+	display: block;
+	border-collapse: collapse;
+	background: #ffffff;
+	margin-top: 10px;
+	overflow: scroll;
+}
+
+thead {
+	background: #f1f1f1;
+}
+
+td, th {
+	font-size: 12pt;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #086fa1;
+	padding: 3px;
+	margin: 0px;
+}
+
+.clear_both {
+	clear: both;
+}
