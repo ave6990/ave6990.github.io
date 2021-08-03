@@ -1,66 +1,120 @@
 html {
-	background: #ddd;
+    background: #ddd;
+    height: 100%;
 }
 
 body {
-	margin: 0px;
-	color: #222;
-	background: #fcfcfc;
-	font: 18pt sans-serif;
+    margin: 0px;
+    color: #222;
+    background: #fcfcfc;
+    font: 12pt sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
-	padding: 20px;
+    margin: 10px;
+    flex-grow: 1;
 }
 
-nav, footer, header {
-	padding: 6px;
-	background: #034769;
-	color: #fafafa;
-/*	border: 2px solid #086fa1;*/
+section {
+    margin: 5px;
 }
 
-nav a {
-	padding: 0 10px;
-	border-right: 2px solid #086fa1;
+section header {
+    font-size: 12pt;
+    border-radius: 10px;
 }
 
-nav a:link, nav a:visited {
-	color: #fafafa;
-	text-decoration: none;
-}
-
-nav a:hover {
-	background: #086fa1;
+footer, header {
+    font-size: 18px;
+    padding: 6px;
+    background: #034769;
+    color: #fafafa;
 }
 
 footer {
-	text-align: center;
+    text-align: center;
+    flex-shrink: 0;
 }
 
-h1 {
-	font-size: 24pt;
-	margin: 0;
-	padding-bottom: 10px;
+label {
+    display: block;
 }
 
-table {
-	display: block;
-	border-collapse: collapse;
-	background: #ffffff;
-	margin-top: 10px;
-	overflow: scroll;
+input, select, button {
+    margin: 5px;
+    font-size: 12pt;
+    border-color: #086fa1;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
 }
 
-thead {
-	background: #f1f1f1;
+button {
+    color: #222;
 }
 
-td, th {
-	font-size: 12pt;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #086fa1;
-	padding: 3px;
-	margin: 0px;
+#valves {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#valves label {
+    margin: 0;
+    width: 30px;
+    text-align: center;
+}
+
+.toggle_button {
+    margin: 0;
+    height: 60px;
+    width: 30px;
+    vertical-align: center;
+    background: #fff;
+    border: 1px solid #086fa1;
+    border-radius: 15px;
+    outline: none;
+    position: relative;
+    display: inline-block;
+    appearance: none;
+    -moz-appearance: none;
+}
+
+.toggle_button::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 1px;
+    top: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: gray;
+    border-radius: 50%;
+    transform: translateY(0);
+}
+
+.toggle_button:checked::after {
+    transform: translateY(calc(100% + 2px));
+    background-color: red;
+}
+
+.valves {
+    flex: 1 1 auto;
+    max-width: 50px;
+}
+
+.warning {
+    background-color: yellow;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
 }
