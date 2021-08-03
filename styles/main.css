@@ -111,14 +111,10 @@ button {
     background-color: yellow;
 }
 
-a:link {
+footer a:link {
     color: #fff;
 }
 
-a:visited {
+footer a:visited {
     color: #fff;
-}
-
-.content {
-    color: #222;
 }
