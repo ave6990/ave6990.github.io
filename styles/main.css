@@ -56,61 +56,6 @@ button {
     color: #222;
 }
 
-#valves {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-#valves label {
-    margin: 0;
-    width: 30px;
-    text-align: center;
-}
-
-.toggle_button {
-    margin: 0;
-    height: 60px;
-    width: 30px;
-    vertical-align: center;
-    background: #fff;
-    border: 1px solid #086fa1;
-    border-radius: 15px;
-    outline: none;
-    position: relative;
-    display: inline-block;
-    appearance: none;
-    -moz-appearance: none;
-}
-
-.toggle_button::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    left: 1px;
-    top: 2px;
-    width: 26px;
-    height: 26px;
-    background-color: gray;
-    border-radius: 50%;
-    transform: translateY(0);
-}
-
-.toggle_button:checked::after {
-    transform: translateY(calc(100% + 2px));
-    background-color: red;
-}
-
-.valves {
-    flex: 1 1 auto;
-    max-width: 50px;
-}
-
-.warning {
-    background-color: yellow;
-}
-
 a:link {
     color: #222;
 }
