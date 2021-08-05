@@ -34,9 +34,17 @@ footer, header {
     color: #fafafa;
 }
 
+header > p {
+    margin: 0;
+}
+
 footer {
     text-align: center;
     flex-shrink: 0;
+}
+
+footer > p {
+    margin: 0;
 }
 
 label {
